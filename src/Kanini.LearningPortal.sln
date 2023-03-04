@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kanini.LearningPortal.API", "Kanini.LearningPortal.API\Kanini.LearningPortal.API.csproj", "{4BBFEB8F-900F-4587-BCCC-48219CA84FBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kanini.LearningPortal.Application", "Kanini.LearningPortal.Application\Kanini.LearningPortal.Application.csproj", "{EA9D2387-AC73-49E0-8F43-1DA99792206F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kanini.LearningPortal.Infrastructure", "Kanini.LearningPortal.Infrastructure\Kanini.LearningPortal.Infrastructure.csproj", "{69A58D65-B5F5-441A-B962-F2EA5B5FA2B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kanini.LearningPortal.Domain", "Kanini.LearningPortal.Domain\Kanini.LearningPortal.Domain.csproj", "{FD51759B-A4E2-4305-83E5-B8910AB2F09E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kanini.LearningPortal.Persistence", "Kanini.LearningPortal.Persistence\Kanini.LearningPortal.Persistence.csproj", "{111AB8A8-5C40-4411-A2A6-985D383A2254}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BBFEB8F-900F-4587-BCCC-48219CA84FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BBFEB8F-900F-4587-BCCC-48219CA84FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BBFEB8F-900F-4587-BCCC-48219CA84FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BBFEB8F-900F-4587-BCCC-48219CA84FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA9D2387-AC73-49E0-8F43-1DA99792206F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA9D2387-AC73-49E0-8F43-1DA99792206F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA9D2387-AC73-49E0-8F43-1DA99792206F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA9D2387-AC73-49E0-8F43-1DA99792206F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69A58D65-B5F5-441A-B962-F2EA5B5FA2B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A58D65-B5F5-441A-B962-F2EA5B5FA2B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A58D65-B5F5-441A-B962-F2EA5B5FA2B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A58D65-B5F5-441A-B962-F2EA5B5FA2B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD51759B-A4E2-4305-83E5-B8910AB2F09E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD51759B-A4E2-4305-83E5-B8910AB2F09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD51759B-A4E2-4305-83E5-B8910AB2F09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD51759B-A4E2-4305-83E5-B8910AB2F09E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{111AB8A8-5C40-4411-A2A6-985D383A2254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{111AB8A8-5C40-4411-A2A6-985D383A2254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{111AB8A8-5C40-4411-A2A6-985D383A2254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{111AB8A8-5C40-4411-A2A6-985D383A2254}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCC8FADA-C875-463E-8513-BDBCFDF0DDE8}
+	EndGlobalSection
+EndGlobal
