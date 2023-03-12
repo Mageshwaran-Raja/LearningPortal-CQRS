@@ -1,3 +1,4 @@
+using Kanini.LearningPortal.API.Middleware;
 using Kanini.LearningPortal.Application;
 using Kanini.LearningPortal.Persistence;
 
@@ -15,6 +16,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
