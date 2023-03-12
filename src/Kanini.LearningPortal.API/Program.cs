@@ -15,6 +15,8 @@ builder.Services.AddPersistenceService(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors();
+
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionMiddleware>();
@@ -27,6 +29,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(options => options.WithOrigins("http://localhost:3000/").
+    AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin());
 
 app.UseAuthorization();
 
