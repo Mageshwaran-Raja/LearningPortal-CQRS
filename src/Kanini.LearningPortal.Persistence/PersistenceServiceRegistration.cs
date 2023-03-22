@@ -15,6 +15,9 @@ namespace Kanini.LearningPortal.Persistence
                 options.UseSqlServer(configuration.GetConnectionString("DatabaseConnectionString")));
 
             services.AddScoped<ICourseRepository, CourseRepository>();
+            services.AddScoped<IUsersRepository, UsersRepository>();
+            services.AddScoped<IRolesRepository, RolesRepository>();
+            services.AddScoped<IDepartmentsRepository, DepartmentsRepository>();
 
             return services;
         }

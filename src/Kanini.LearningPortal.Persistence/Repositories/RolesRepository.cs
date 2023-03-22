@@ -1,40 +1,39 @@
 ﻿using Kanini.LearningPortal.Application.Contracts.Persistence;
-using Kanini.LearningPortal.Domain.Entities;
 using Kanini.LearningPortal.Persistence.DatabaseContext;
 using Microsoft.EntityFrameworkCore;
 
 namespace Kanini.LearningPortal.Persistence.Repositories
 {
-    public class CourseRepository : ICourseRepository
+    public class RolesRepository : IRolesRepository
     {
         protected readonly LearningPortalDBContext _learningPortalDBContext;
 
-        public CourseRepository(LearningPortalDBContext learningPortalDBContext)
+        public RolesRepository(LearningPortalDBContext learningPortalDBContext)
         {
-            this._learningPortalDBContext = learningPortalDBContext;
+            _learningPortalDBContext = learningPortalDBContext;
         }
 
-        public Task<int> AddCourseAsync(Course course)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> DeleteCourseByIdAsync(Guid courseId)
+        public Task<int> AddRoleAsync(Role role)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<List<Course>> GetCourseAsync()
-        {
-            return await _learningPortalDBContext.Courses.ToListAsync();
-        }
-
-        public Task<Course> GetCourseByIdAsync(Guid Id)
+        public Task<int> DeleteRoleAsync(Guid roleId)
         {
             throw new NotImplementedException();
         }
 
-        public Task<int> UpdateCourseAsync(Course course)
+        public async Task<List<Role>> GetAllRolesAsync()
+        {
+            return await _learningPortalDBContext.Roles.ToListAsync();
+        }
+
+        public Task<Role> GetRoleByIdAsync(Guid roleId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> UpdateRoleAsync(Role role)
         {
             throw new NotImplementedException();
         }
