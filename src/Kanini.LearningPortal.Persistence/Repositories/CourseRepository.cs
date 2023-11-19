@@ -11,12 +11,13 @@ namespace Kanini.LearningPortal.Persistence.Repositories
 
         public CourseRepository(LearningPortalDBContext learningPortalDBContext)
         {
-            this._learningPortalDBContext = learningPortalDBContext;
+            _learningPortalDBContext = learningPortalDBContext;
         }
 
-        public Task<int> AddCourseAsync(Course course)
+        public async Task<int> AddCourseAsync(Course course)
         {
-            throw new NotImplementedException();
+            await _learningPortalDBContext.Courses.AddAsync(course);    
+            return await _learningPortalDBContext.SaveChangesAsync();
         }
 
         public Task<int> DeleteCourseByIdAsync(Guid courseId)

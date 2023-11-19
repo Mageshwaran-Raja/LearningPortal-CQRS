@@ -1,10 +1,19 @@
 ﻿using Kanini.LearningPortal.Application.Contracts.Persistence;
 using Kanini.LearningPortal.Domain.Entities;
+using Kanini.LearningPortal.Persistence.DatabaseContext;
+using Microsoft.EntityFrameworkCore;
 
 namespace Kanini.LearningPortal.Persistence.Repositories
 {
     public class DepartmentsRepository : IDepartmentsRepository
     {
+        protected readonly LearningPortalDBContext _learningPortalDBContext;
+
+        public DepartmentsRepository(LearningPortalDBContext learningPortalDBContext)
+        {
+            _learningPortalDBContext = learningPortalDBContext;
+        }
+
         public Task<int> AddDepartmentAsync(Department department)
         {
             throw new NotImplementedException();
@@ -15,9 +24,9 @@ namespace Kanini.LearningPortal.Persistence.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<List<Department>> GetAllDepartmentsAsync()
+        public async Task<List<Department>> GetAllDepartmentsAsync()
         {
-            throw new NotImplementedException();
+            return await _learningPortalDBContext.Departments.ToListAsync();
         }
 
         public Task<Department> GetDepartmentsByIdAsync(Guid departmentId)

@@ -16,8 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Courses\Commands\" />
-    <Folder Include="Features\Departments\" />
     <Folder Include="Features\Materials\" />
     <Folder Include="Features\Nominees\" />
   </ItemGroup>
