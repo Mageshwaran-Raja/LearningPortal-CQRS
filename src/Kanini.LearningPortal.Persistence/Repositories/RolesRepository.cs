@@ -18,7 +18,7 @@ namespace Kanini.LearningPortal.Persistence.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<int> DeleteRoleAsync(Guid roleId)
+        public Task<int> DeleteRoleAsync(int roleId)
         {
             throw new NotImplementedException();
         }
@@ -28,9 +28,9 @@ namespace Kanini.LearningPortal.Persistence.Repositories
             return await _learningPortalDBContext.Roles.ToListAsync();
         }
 
-        public Task<Role> GetRoleByIdAsync(Guid roleId)
+        public async Task<Role> GetRoleByIdAsync(int roleId)
         {
-            throw new NotImplementedException();
+            return await _learningPortalDBContext.Roles.FirstAsync(x => x.RoleId == roleId);
         }
 
         public Task<int> UpdateRoleAsync(Role role)
